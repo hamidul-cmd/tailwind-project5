@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray_10">
+    <header class="px-4 pt-10 pb-[50px] relative max-w-wrapper m-auto lg:py-[30px] lg:px-20 xl:px-[162px] xl:py-[50px]">
+        <img src="assets/dot1.png" alt="" class="absolute top-0 left-0 translate-x-[-10px] translate-y-[-10px] z-[-1]">
+        <nav
+            class="py-[14px] pr-[14px] pl-6 border border-gray_15 rounded-[100px] flex justify-between items-center bg-gray_11 lg:pr-6 ">
+            <picture class="cursor-pointer">
+                <source srcset="assets/blogo.png" media="(min-width: 1920px)">
+                <source srcset="assets/mlogo.png" media="(min-width: 1440px)">
+                <source srcset="assets/slogo.png" media="(min-width: 300px)">
+                <img src="assets/slogo.png" alt="">
+            </picture>
+            <ul
+                class="manu absolute bottom-0 left-0 p-10 translate-y-[80%] flex flex-col gap-5 bg-green_60 translate-x-[-110%] transition-all ease-in lg:relative lg:translate-y-0 lg:flex-row lg:p-0 lg:translate-x-0 lg:bg-transparent">
+                <li
+                    class="text-fs_14_18 text-black leading-[150%] font-medium nav__link lg:text-white lg:font-normal lg:py-[10px] px-[18px] rounded-[82px] hover:bg-gray_15 cursor-pointer transition-all ease-in">
+                    <a href="">Home</a>
+                </li>
+                <li
+                    class="text-fs_14_18 text-black leading-[150%] font-medium nav__link lg:text-white lg:font-normal lg:py-[10px] px-[18px] rounded-[82px] hover:bg-gray_15 cursor-pointer transition-all ease-in">
+                    <a href="">Careers</a>
+                </li>
+                <li
+                    class="text-fs_14_18 text-black leading-[150%] font-medium nav__link lg:text-white lg:font-normal lg:py-[10px] px-[18px] rounded-[82px] hover:bg-gray_15 cursor-pointer transition-all ease-in">
+                    <a href="">About</a>
+                </li>
+                <li
+                    class="text-fs_14_18 text-black leading-[150%] font-medium nav__link lg:text-white lg:font-normal lg:py-[10px] px-[18px] rounded-[82px] hover:bg-gray_15 cursor-pointer transition-all ease-in">
+                    <a href="">Security</a>
+                </li>
+            </ul>
+            <div class="w-[56px] h-10 rounded-[82px] bg-green_60 flex justify-center items-center lg:hidden">
+                <i class="ri-menu-3-fill open text-[24px] "></i>
+                <i class="ri-close-fill close hidden text-[24px]"></i>
+            </div>
+            <div class="hidden lg:block ">
+                <a href=""
+                    class="text-fs_14_18 leading-[150%] text-white px-6 py-3 rounded-[82px] hover:bg-green_60 hover:text-black transition-all ease-in">Sign
+                    Up</a>
+                <a href=""
+                    class="text-fs_14_18 leading-[150%] text-white px-6 py-3 rounded-[82px] hover:bg-green_60 hover:text-black transition-all ease-in">Login</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero__container max-w-wrapper m-auto px-4 flex flex-col gap-[80px] lg:flex-row  lg:px-[80px] lg:py-[60px] lg:justify-between overflow-hidden xl:px-[162px] ">
+            <div class="flex flex-col items-center text-center lg:text-left lg:items-start">
+                <div class="flex py-[10px] pl-2 pr-4 rounded-[61px] bg-gray_15 w-fit mb-3 lg:mb-4 xl:mb-5 items-center"><svg width="17" height="18"
+                        viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5.66907 2.16563C6.35588 1.37578 7.36943 0.875 8.5 0.875C9.63051 0.875 10.644 1.37573 11.3308 2.16551C12.3751 2.09255 13.446 2.45513 14.2455 3.25464C15.045 4.05415 15.4076 5.12507 15.3347 6.16933C16.1243 6.85613 16.625 7.86957 16.625 9C16.625 10.1306 16.1242 11.1443 15.3342 11.8311C15.407 12.8751 15.0444 13.9458 14.2451 14.7452C13.4457 15.5446 12.375 15.9072 11.3309 15.8344C10.6441 16.6242 9.63056 17.125 8.5 17.125C7.3695 17.125 6.356 16.6243 5.6692 15.8345C4.62493 15.9075 3.554 15.5449 2.75448 14.7454C1.95496 13.9459 1.59238 12.8749 1.66534 11.8307C0.875654 11.1439 0.375 10.1304 0.375 9C0.375 7.86951 0.875705 6.85602 1.66546 6.16921C1.59258 5.12504 1.95517 4.05423 2.75462 3.25478C3.55406 2.45533 4.62489 2.09274 5.66907 2.16563ZM11.5086 7.48827C11.7092 7.20739 11.6442 6.81705 11.3633 6.61642C11.0824 6.41579 10.692 6.48084 10.4914 6.76173L7.79525 10.5364L6.44194 9.18306C6.19786 8.93898 5.80214 8.93898 5.55806 9.18306C5.31398 9.42714 5.31398 9.82286 5.55806 10.0669L7.43306 11.9419C7.56297 12.0719 7.74346 12.138 7.92655 12.1229C8.10964 12.1077 8.2768 12.0128 8.38358 11.8633L11.5086 7.48827Z"
+                            fill="#CAFF33" />
+                    </svg>
+                    <h5 class="text-fs_12_18 font-light text-white ml-1">No LLC Required, No Credit Check.</h5>
+                </div>
+                <h1 class="text-fs_28_48 leading-[150%] mb-2 font-medium text-white lg:mb-[10px] xl:mb-[14px] ">Welcome to YourBank<br class="hidden lg:block"> Empowering
+                    Your <span class="block text-green_60 lg:inline">Financial<br class="hidden lg:block"> Journey</span></h1>
+                <p class="text-fs_14_18 text-white font-normal mb-[30px] px-2 lg:mb-[40px] xl:mb-[50px]">At YourBank, our mission is to provide
+                    comprehensive banking solutions that<br class="hidden lg:block"> empower individuals and businesses to achieve their financial
+                    goals. We are<br class="hidden lg:block"> committed to delivering personalized and innovative services that prioritize our<br class="hidden lg:block">
+                    customers' needs.</p>
+                <a href="" class="py-[14px] px-6 text-fs_14_18 bg-green_60 rounded-[82px]">Open Account</a>
+            </div>
+            <div class="p-5 rounded-md  bg-gray_10 border border-gray_15 lg:w-[410px] lg:mr-[131px] lg:p-7 xl:p-9 relative mx-[26px] lg:mx-0">
+                <h5 class="text-fs_10_17 font-medium leading-[150%] text-white mb-[10px] lg:mb-[13px] ">Your Transactions</h5>
+                <div class="mb-4 lg:mb-5">
+                    <div
+                        class="flex items-end justify-between text-white bg-gray_11 px-3 py-2 rounded-md border-[0.5px] border-gray_15 relative z-20">
+                        <div class="flex items-center gap-[5px] ">
+                            <img src="assets/Sub Container.png" alt="">
+                            <div>
+                                <h5 class="text-fs_9_15 font-light leading-[150%]">Transaction</h5>
+                                <h5 class="text-fs_10_17 leading-[150%] ">Joel Kenley</h5>
+                            </div>
+                        </div>
+                        <h5 class="text-fs_12_18 font-medium leading-[150%] ">-$68.00</h5>
+                    </div>
+                    <div
+                        class="flex items-end justify-between text-white bg-gray_11 px-3 py-2 rounded-md border-[0.5px] border-gray_15 translate-y-[-15px] relative z-10 scale-90 opacity-55 ">
+                        <div class="flex items-center gap-[5px] ">
+                            <img src="assets/Sub Container.png" alt="">
+                            <div>
+                                <h5 class="text-fs_9_15 font-light leading-[150%]">Transaction</h5>
+                                <h5 class="text-fs_10_17 leading-[150%] ">Joel Kenley</h5>
+                            </div>
+                        </div>
+                        <h5 class="text-fs_12_18 font-medium leading-[150%] ">-$68.00</h5>
+                    </div>
+                    <div
+                        class="flex items-end justify-between text-white bg-gray_11 px-3 py-2 rounded-md border-[0.5px] border-gray_15 translate-y-[-35px] relative z-[5] scale-75 opacity-55 ">
+                        <div class="flex items-center gap-[5px] ">
+                            <img src="assets/Sub Container.png" alt="">
+                            <div>
+                                <h5 class="text-fs_9_15 font-light leading-[150%]">Transaction</h5>
+                                <h5 class="text-fs_10_17 leading-[150%] ">Joel Kenley</h5>
+                            </div>
+                        </div>
+                        <h5 class="text-fs_12_18 font-medium leading-[150%] ">-$68.00</h5>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-white text-fs_10_17 leading-[150%] mb-[14px] lg:mb-5">Money Exchange</h5>
+                    <div class="bg-gray_11 rounded-md border-[0.5] border-gray_15 ">
+                        <div class="flex border-b border-gray_15 ">
+                            <div class="w-[50%] border-r border-gray_15 p-[10px] text-white ">
+                                <div class="flex items-center gap-[5px] mb-[5px] ">
+                                    <img src="assets/flag1.png" alt="">
+                                    <h5 class="text-fs_9_15 ">INR</h5>
+                                </div>
+                                <h5 class="text-fs_8_13 font-light leading-[150%] ">Indian Rupees</h5>
+                            </div>
+                            <div class="w-[50%] p-[10px] text-white ">
+                                <div class="flex items-center gap-[5px] mb-[5px] ">
+                                    <img src="assets/flag2.png" alt="">
+                                    <h5 class="text-fs_9_15 ">INR</h5>
+                                </div>
+                                <h5 class="text-fs_8_13 font-light leading-[150%] ">Indian Rupees</h5>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="w-[50%] border-r border-gray_15 p-[10px] text-white ">
+                                <h5 class="text-fs_10_17 font-medium">5,0000</h5>
+                            </div>
+                            <div class="w-[50%] p-[10px] text-white ">
+                                <h5 class="text-fs_10_17 font-medium">5,0000</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="block py-2 rounded-[82px] text-green_65 text-center mt-[14px] bg-[#22251B] leading-[150%] lg:mb-5">Exchange</a>
+                <img src="assets/Abstract Design.png" alt="" class="absolute top-0 right-0 lg:translate-x-[43%] z-[-1] lg:scale-125 lg:translate-y-3 translate-x-[25%] scale-90 translate-y-[-15%]">
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="product__container px-4 lg:px-20 xl:px-[162px] max-w-wrapper m-auto pt-[120px] xl:pt-[150px] ">
+            <div class="tittle   flex flex-col items-center text-white text-center mb-[60px] lg:flex-row lg:justify-between lg:text-left lg:mb-20 xl:mb-[100px] ">
+                <div>
+                    <h2 class="text-fs_28_48 font-medium leading-[150%] mb-[10px] ">Our <span class="text-green_60">Products</span></h2>
+                    <p class="text-fs_14_18 font-light text-gray_70 mb-5 ">Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your<br class="hidden lg:block"> unique financial needs and aspirations</p>
+                </div>
+                <div class="p-3 rounded-[82px] bg-gray_11 border border-gray_15 ">
+                    <a href="" class="text-fs_14_18 leading-[150%] py-[10px] px-[18px] rounded-[140px] hover:text-gray_11 hover:bg-green_60 transition-all ease-in duration-200">For Individuals</a>
+                    <a href="" class="text-fs_14_18 leading-[150%] py-[10px] px-[18px] rounded-[140px] hover:text-gray_11 hover:bg-green_60 transition-all ease-in duration-200">For Businesses</a>
+                </div>
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

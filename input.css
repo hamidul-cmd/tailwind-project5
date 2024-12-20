@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.manu.active {
+    transform: translateX(0);
+    transform: translateY(80%);
+}
+
+body.active {
+    overflow: hidden;
+}
